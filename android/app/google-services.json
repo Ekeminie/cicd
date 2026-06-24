@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "359145072763",
+    "project_id": "psuedo-37d5e",
+    "storage_bucket": "psuedo-37d5e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359145072763:android:d56d203613d888e74a1ade",
+        "android_client_info": {
+          "package_name": "com.example.cicd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByWYjpLpQiW8bELMQl3AdDvxZUk_2hxEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:359145072763:android:34d7c5c177136a3a4a1ade",
+        "android_client_info": {
+          "package_name": "com.example.psuedo_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByWYjpLpQiW8bELMQl3AdDvxZUk_2hxEE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
