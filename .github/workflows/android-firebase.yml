@@ -1,4 +1,4 @@
-name: Android Build & Release
+name: Android Firebase Distribution
 
 on:
   push:
@@ -12,10 +12,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Java
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
@@ -86,7 +86,7 @@ jobs:
 
       - name: Upload build artifact
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: android-${{ steps.env.outputs.ENV }}-build
           path: build/app/outputs/flutter-apk/*.apk
@@ -95,7 +95,7 @@ jobs:
       - name: Summary
         if: success()
         run: |
-          echo "### Android Build Successful ✅" >> $GITHUB_STEP_SUMMARY
+          echo "### Android Firebase Build Successful ✅" >> $GITHUB_STEP_SUMMARY
           echo "**Environment:** ${{ steps.env.outputs.ENV }}" >> $GITHUB_STEP_SUMMARY
           echo "**Branch:** ${{ steps.env.outputs.branch }}" >> $GITHUB_STEP_SUMMARY
           echo "**Triggered by:** @${{ github.actor }}" >> $GITHUB_STEP_SUMMARY
