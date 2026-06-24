@@ -1,10 +1,11 @@
 name: Android Build & Release
 
 on:
-  push:
-    branches:
-      - develop
-      - production
+  workflow_dispatch:
+#  push:
+#    branches:
+#      - develop
+#      - production
 
 jobs:
   android:
