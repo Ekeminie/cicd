@@ -76,7 +76,8 @@ jobs:
         with:
           appId: ${{ secrets.FIREBASE_ANDROID_APP_ID }}
           serviceCredentialsFileContent: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
-          groups: testers
+#          groups: testers
+          testers: eshietekemini8@gmail.com, eshiet.ekemini8@gmail.com
           releaseNotes: |
             Environment: ${{ steps.env.outputs.ENV }}
             Branch: ${{ steps.env.outputs.branch }}
